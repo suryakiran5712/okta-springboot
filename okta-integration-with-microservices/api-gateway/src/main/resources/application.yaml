@@ -1,0 +1,21 @@
+server:
+  port: 8084
+  
+# Okta configuration
+okta:
+  oauth2:
+    issuer: https://dev-31008286.okta.com/oauth2/default
+    client-id: 0oaj0qrv13XtVeHZM5d7
+    client-secret: 3phE-43V0SXyuyuUbVHYu5xZI0NNjkU9xW9s6rDeYsGSG_7RRSPoWf5Ls-vu4K16
+    scopes: okta_integration,openid,profile,email
+#  client:
+#    org-url: https://dev-31008286.okta.com
+#    token: 00noWO17w922abDbTTLzCT7G4nvk8JiqiYxyQv9-2u
+                   
+backend:
+  service:
+    url: http://localhost:8991
+    client-id: 0oaj0qrv13XtVeHZM5d7
+    client-secret: 3phE-43V0SXyuyuUbVHYu5xZI0NNjkU9xW9s6rDeYsGSG_7RRSPoWf5Ls-vu4K16
+    token-issuer: https://dev-31008286.okta.com/oauth2/default/v1/token
+    
